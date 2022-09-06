@@ -136,3 +136,5 @@ data/
 .jpg 
 .csv 
 *.csv 
+/saved_model
+svaed_model/
