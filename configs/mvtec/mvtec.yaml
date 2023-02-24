@@ -1,0 +1,21 @@
+DATA:
+  datadir: ../../Dataset/MVtecAD
+  dataset: MVtecAD
+  imgcls: all
+  imgsize: 256
+  mode: full
+  transform: basic
+MODEL:
+  decoder: de_wide_resnet50_2
+  encoder: wide_resnet50_2
+SAVE:
+  savedir: ./save_models
+  wandb: true
+TRAIN:
+  batchsize: 16
+  device: cuda
+  epochs: 100
+  lr: 0.005
+  multigpu: true
+  scheulder: false
+  seed: 111
